@@ -1,0 +1,27 @@
+<!-- <h1 *ngFor="let fruit of fruits">{{fruit}}</h1> -->
+
+<!-- <div *ngFor="let fruit of fruitsColor">
+  <h1 *ngIf="fruit.color== 'Red'" style="color: red;">{{fruit.name}}</h1>
+  <h1 *ngIf="fruit.color=='Yellow'" style="color: yellow;">{{fruit.name}}</h1>
+  <h1 *ngIf="fruit.color=='Black'" style="color: black;">{{fruit.name}}</h1>
+  <h1 *ngIf="fruit.color=='Green'" style="color: green;">{{fruit.name}}</h1>
+  <h1 *ngIf="fruit.color=='Pink'" style="color: pink;">{{fruit.name}}</h1>
+  <h1 *ngIf="fruit.color=='Orange'" style="color: orange;">{{fruit.name}}</h1>
+</div > -->
+
+<h1>{{title}}</h1>
+
+<ul *ngFor="let fruit of fruitsColor">
+    <li *ngIf="fruit.color== 'Red'" style="color: red;">{{fruit.name}}</li>
+    <li *ngIf="fruit.color=='Yellow'" style="color: yellow;">{{fruit.name}}</li>
+    <li *ngIf="fruit.color=='Black'" style="color: black;">{{fruit.name}}</li>
+    <li *ngIf="fruit.color=='Green'" style="color: green;">{{fruit.name}}</li>
+    <li *ngIf="fruit.color=='Pink'" style="color: pink;">{{fruit.name}}</li>
+    <li *ngIf="fruit.color=='Orange'" style="color: orange;">{{fruit.name}}</li>
+    <li>Fruits liked by</li>
+
+    <ul *ngFor="let liked of fruit.likedBy">
+        <li>{{liked}}</li>
+    </ul>
+
+</ul>
